@@ -1,7 +1,9 @@
 pipeline {
     agent {
    label {
-   label'built-in'}
+   label'built-in'
+   customWorkspace "/mnt/mulitibranchpipeline-1"
+   }
    }
    stages {
         stage('Hello') {
@@ -9,5 +11,9 @@ pipeline {
                 echo 'Hello World'
             }
         }
-    }
+	  stage ('one') {
+					steps {
+							 sh "echo 'Hello PREM' > dev.html"
+					}
+			}
 }
