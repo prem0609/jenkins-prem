@@ -8,12 +8,12 @@ pipeline {
    stages {
         stage('Hello') {
             steps {
-                echo 'Hello World'
+                echo 'Hello everyone 22q2 file'
             }
         }
 	  stage ('one') {
 					steps {
-							 sh "echo 'Hello PREM' > dev.html"
+							 sh "echo 'Hello priyanka' > qa.html"
 					}
 			}
 }
